@@ -19,7 +19,7 @@ const server = http.createServer((req, res) => {
     }
 
     if (url === '/users') {
-        // Read HTML file - Browser knows it is HTML code
+        // Read HTML file - The browere will knows it is in HTML concept
         res.setHeader('Content-Type', 'text/html');
 
         // Write some data to the response
