@@ -42,7 +42,7 @@ const server = http.createServer((req, res) => {
         const parsedBody = Buffer.concat(body).toString();
         console.log(parsedBody.split('=')[1]); // username=whatever-the-user-entered
         });
-        // Response code: 302 used Found means that the URL of req resp changes temporarily
+        // Response code: 302 used Found. This mean that the URL of req resp changes temporarily
         res.statusCode = 302;
         res.setHeader('Location', '/');
         res.end();
